@@ -55,6 +55,9 @@ class ProductosProvider {
 
 
     if ( decodedData == null ) return [];
+    
+    if ( decodedData['error'] != null ) return [];
+
 
     decodedData.forEach( ( id, prod ){
 
